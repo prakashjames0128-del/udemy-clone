@@ -84,9 +84,17 @@ body {
 }
 
 .cource-card {
-  width: 300px;
+  width: 23%;
  
 }
+@media screen and (max-width:768px){
+
+    .cource-card{
+        width:48%;
+    }
+
+}
+
 .cource-card img {
   width: 100%;
   height: 50%;
