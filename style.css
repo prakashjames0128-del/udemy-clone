@@ -114,6 +114,11 @@ body {
   left: 10%;
 
 }
+@media screen and (max-width:768px){
+
+    .sale-image__offer{
+        width:48%;
+    }
 
 .recommended {
   padding: 10px;
