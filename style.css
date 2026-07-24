@@ -93,26 +93,46 @@ body {
 .categories p:hover {
   background-color: orangered;
   color: white;
+  cursor: pointer;
+  transition: 1s;
 }
 
 .sale-image{
   position: relative;
+     
 }
 
 .sale-image img {
   width: 100%;
   padding: 10px;
+
 }
 
 .sale-image__offer{
-  width: 35%;
+  width: 45%;
+  font-size: 12px;
   border: solid black 2px;
   background-color: white;
-  padding: 2%;
+  padding: 5%;
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 10%;
+  left: 5%;
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+ 
 
+}
+@keyframes zoom {
+  0%{
+    transform:scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+
+  }
 }
  
 .recommended {
@@ -130,14 +150,6 @@ body {
 .cource-card {
   width: 23%;
    
-}
-
-@media screen and (max-width:768px){
-
-    .cource-card{
-        width:48%;
-    }
-
 }
 
 .cource-card img {
@@ -195,4 +207,15 @@ body {
   color: white;
   margin: 20px;
   align-items: end;
+}
+
+@media screen and (max-width:768px){
+
+    .cource-card{
+        width:48%;
+    }
+    .body{
+      font-size: 10px;
+    }
+
 }
